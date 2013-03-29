@@ -1,0 +1,30 @@
+---
+layout: layout
+pageable: true
+---
+<h2 class="archiveTitle">
+  <% case page_type
+     when 'day' %>
+    <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+  <% when 'month' %>
+    <%= Date.new(year, month, 1).strftime('%b %Y') %>
+  <% when 'year' %>
+    <%= year %>
+  <% end %>
+</h2>
+
+<ul>
+  <% page_articles.each_with_index do |article, i| %>
+   <article class="titles">
+        <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+        <span class="postDetails clearfix"><time datetime="<%= article.date.strftime('%m-%Y') %>" class="date details"><%= article.date.strftime('%b %e %Y') %></time></span>
+        </article>
+  <% end %>
+</ul>
+<%= partial "paginate", :locals => {
+  :paginate => paginate, 
+  :next_page => next_page, 
+  :prev_page => prev_page,
+  :num_pages => num_pages,
+  :page_number => page_number
+} %>

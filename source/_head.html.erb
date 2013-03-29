@@ -1,0 +1,40 @@
+<!doctype html>
+<!--[if lte IE 7]>
+  <meta http-equiv="refresh" content="0; url=/civicz/civicz.html" />
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  window.top.location = '/cvicz/civicz.html';
+  /* ]]> */
+  </script>
+<![endif]-->
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="Index, Follow" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Frameless Middleman: Because fluid layouts are the Devil. Verily.">
+
+    <title><%= data.page.title %> | Frameless Middleman</title>
+    <%= stylesheet_link_tag 'screen.css' %>
+    <%= javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', '/javascripts/core.js') %>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Arvo:400,700:latin', 'Vollkorn:400italic,400,700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); 
+    </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>

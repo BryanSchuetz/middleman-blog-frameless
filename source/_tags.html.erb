@@ -1,0 +1,3 @@
+	<% current_article.tags.each do |tag| %>
+	  <span class="tags"><a class="tags" href="<%= tag_path tag %>"><%=  tag %></a></span>
+	<% end %>

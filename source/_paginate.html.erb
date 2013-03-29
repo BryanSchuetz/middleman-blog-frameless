@@ -1,0 +1,13 @@
+<% if paginate %>
+  <% if num_pages > 1 %>
+    <p class="details pagination">Page <%= page_number %> of <%= num_pages %></p>
+  <nav class="clearfix">
+      <div class="button previousButton">
+        <%= link_to '<span class="ss-icon ">rewind</span>Previous', prev_page, :class => 'previous details' %>
+            </div>
+      <div class="button nextButton">
+        <%= link_to 'Next<span class="ss-icon ">fastforward</span>', next_page, :class => 'next details' %>
+      </div>
+  </nav>
+  <% end %>
+<% end %>

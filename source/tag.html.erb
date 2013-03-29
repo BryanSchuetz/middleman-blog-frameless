@@ -1,0 +1,21 @@
+---
+title: Tag Page
+layout: tags
+description: Posts Tagged With
+pageable: true
+---
+<h2 class="tagTitle">#<%= @tag %></h2>
+<meta itemprop="itemListOrder" content="Descending" />
+  <% page_articles.each_with_index do |article, i| %>
+  <article class="titles">
+    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+		    <span class="postDetails clearfix"><time datetime="<%= article.date.strftime('%m-%Y') %>" class="date details"><%= article.date.strftime('%b %e %Y') %></time></span>
+  			</article>
+  <% end %>
+  <%= partial "paginate", :locals => {
+  :paginate => paginate, 
+  :next_page => next_page, 
+  :prev_page => prev_page,
+  :num_pages => num_pages,
+  :page_number => page_number
+} %>
