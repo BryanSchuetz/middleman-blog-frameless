@@ -20,13 +20,13 @@ body{
   font-family: 'Vollkorn', Georgia, serif;
   background-color: #f5f6ff;
   color: #666;
-  visibility: hidden
+  visibility: hidden;
   }
 .wf-active body{
     visibility: visible;  
 }
 a, a:visited{
-  color: #4f4f51;
+  color: #369BCA;
   text-decoration: none;
 }
 a:hover{
@@ -137,11 +137,7 @@ h2{
   font-family: 'Arvo', Georgia, serif;
   font-weight: 800;
   font-size: 1.5em;
-  visibility: hidden
   }
-.wf-active h2{
-  visibility: visible;  
-}
 .details{
   font-size: ($font-size - 5) / $em;
   font-family: Helvetica, Arial, sans-serif;
