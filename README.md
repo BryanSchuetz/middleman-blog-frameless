@@ -13,7 +13,7 @@ Just your basic blank slate of a [Middleman-blog](http://middlemanapp.com/bloggi
 * Profit
 
 ##Demo
-http://signalbase.org/
+http://bryanschuetz.github.io/middleman-blog-frameless/
 
 ## Usage
 
