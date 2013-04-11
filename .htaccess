@@ -1,4 +1,4 @@
-ErrorDocument 404 /404.html
+ErrorDocument 404 404.html
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType application/javascript A604800
