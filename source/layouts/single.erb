@@ -5,27 +5,27 @@
         <%= partial "header" %>
         <nav class="clearfix"><% unless current_article.previous_article.nil? %>
           <div class="navButton button previousButton">
-            <a class="previous details" href="<%= current_article.previous_article.url %>"><i class="icon-backward left-more"></i>Earlier</a>
+            <a class="previous details" href="/middleman-blog-frameless/<%= current_article.previous_article.url %>"><i class="icon-backward left-more"></i>Earlier</a>
           </div>
           <% else %>
             <div class="navButton button previousButton">
-              <a href="jibber-jabber/2013.html" class="previous details"><i class="icon-reorder left-more"></i>Archive</a>
+              <a href="/middleman-blog-frameless/jibber-jabber/2013.html" class="previous details"><i class="icon-reorder left-more"></i>Archive</a>
             </div> 
           <% end %>
           <% unless current_article.next_article.nil? %>
             <div class="navButton button nextButton">
-              <a href="<%= current_article.next_article.url %>" class="next details">Later<i class="icon-forward right-more"></i></a>
+              <a href="/middleman-blog-frameless/<%= current_article.next_article.url %>" class="next details">Later<i class="icon-forward right-more"></i></a>
             </div>
           <% else %>
             <div class="navButton button nextButton">
-              <a href="jibber-jabber/2013.html" class="next details">Archive<i class="icon-reorder right-more"></i></a>
+              <a href="/middleman-blog-frameless/jibber-jabber/2013.html" class="next details">Archive<i class="icon-reorder right-more"></i></a>
             </div>
           <% end %>
          <span class="navLinks details"><a href="http://twitter.com"><i class="icon-twitter"></i>Twitter</a><a href="rss.rss"><i class="icon-rss"></i>RSS</a><a class="last" href="mailto:blank@blank.com"><i class="icon-envelope-alt"></i>Contact</a></span>
         </nav>
       </header>
       <article class="single">
-        <h2><a href="<%= current_article.url %>"><%= current_article.title %></a></h2>
+        <h2><a href="/middleman-blog-frameless/<%= current_article.url %>"><%= current_article.title %></a></h2>
         <span class="postDetails clearfix"><time class="date details"><%= current_article.date.strftime('%b %e %Y') %></time><span class="tagLinks details">Tags: <%= partial "tags" %></span></span>
         <%= yield %>
       </article>

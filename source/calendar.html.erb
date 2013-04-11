@@ -16,7 +16,7 @@ pageable: true
 <ul>
   <% page_articles.each_with_index do |article, i| %>
    <article class="titles">
-        <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+        <h2><a href="/middleman-blog-frameless/<%= article.url %>"><%= article.title %></a></h2>
         <span class="postDetails clearfix"><time datetime="<%= article.date.strftime('%m-%Y') %>" class="date details"><%= article.date.strftime('%b %e %Y') %></time></span>
         </article>
   <% end %>
