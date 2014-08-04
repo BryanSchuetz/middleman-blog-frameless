@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Frameless Middleman</title>
+        <description>Because fluid layouts are the devil.</description>
+        <link>http://localhost:4567</link>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 11 Mar 2014 17:35:27 -0400</lastBuildDate>
+        <pubDate>Mon, 13 Oct 1970 16:45:00 +0000</pubDate>
+        <ttl>1800</ttl>
+ 
+        
+        <item>
+          <title>There Goes The Neighborhood</title>
+          <description>Now the serpent was more crafty than any beast of the field which the LORD God had made. And he said to the woman, "Indeed, has God said, 'You shall not eat from any tree of the garden'?" The woman said to the serpent: 
+	 "From the fruit of the trees of the garden we may eat; but from the fruit of the tree which is in the middle of the garden, God has said, 'You shall not eat from it or touch it, or you will die.'"</description>
+          <link>http://localhost:4567/jibber-jabber/2013/there-goes-the-neighborhood.html</link>
+          <pubDate>Sat, 09 Mar 2013 22:00:00 +0000</pubDate>
+        </item>
+        
+        <item>
+          <title>Shit Just Got Real</title>
+          <description>When the people saw the thunder and lightning and heard the trumpet and saw the mountain in smoke, they trembled with fear. They stayed at a distance and said to Moses, "Speak to us yourself and we will listen.  
+	
+	 But do not have God speak to us or we will die." Moses said to the people, "Do not be afraid. God has come to test you, so that the fear of God will be with you to keep you from sinning." The people remained at a distance, while Moses approached the thick darkness where God was.</description>
+          <link>http://localhost:4567/jibber-jabber/2013/shit-just-got-real.html</link>
+          <pubDate>Sat, 02 Feb 2013 22:00:00 +0000</pubDate>
+        </item>
+        
+        <item>
+          <title>Livin The Good Life</title>
+          <description>The LORD said:
+	   "I have indeed seen the misery of my people in Egypt. So I have come down to rescue them from the hand of the Egyptians and to bring them up out of that land into a good and spacious land, a land flowing with milk and honey--the home of the Canaanites, Hittites, Amorites, Perizzites, Hivites and Jebusites."</description>
+          <link>http://localhost:4567/jibber-jabber/2013/livin-the-good-life.html</link>
+          <pubDate>Sun, 20 Jan 2013 22:00:00 +0000</pubDate>
+        </item>
+         
+</channel>
+</rss>
